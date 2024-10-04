@@ -277,7 +277,6 @@ main {
 #perfection > article > img {
   width: 40%;
   height: 90%;
-  border-radius: 12px;
 }
 
 .textContainer h3 {
@@ -344,7 +343,6 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px;
 }
 
 #imageContainer img:nth-child(1) {
@@ -422,11 +420,43 @@ footer {
   list-style: none;
 }
 
-.footer_url div ul li {
+.footer_url div ul li a {
   line-height: 2rem;
+  color: white;
+  text-decoration: none;
 }
 
-.footer_url div ul li:hover {
+.footer_url div ul li a:hover {
   color: #e9c042;
   cursor: pointer;
+}
+
+/* Toast message css   */
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #e9c042;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 10;
+}
+
+.toast > * {
+  margin: 2px;
+}
+
+.toast.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+iframe {
+  margin-bottom: 5rem;
 }

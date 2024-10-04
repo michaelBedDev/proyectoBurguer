@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="pilgrims_burguer.css" />
   </head>
 
+  <script defer>
+    function betaCerrada(){
+      console.log('test');
+      const toast = document.getElementById('toast');
+      toast.classList.add('mostrar');
+      setTimeout(() => {toast.classList.remove('mostrar');}, 2000);
+    };
+  </script>
+
   <body>
+
+
+    <!-- Warning -->
+    <!-- Este mensaje está orientado a mostrar errores o avisos de la aplicación -->
+    <div class="toast" id="toast">
+        <h5>Fin de la prueba</h5>
+        <p>Versión final no disponible</p>
+    </div>
+
+
+
+
     <!-- Header -->
     <header>
       <div class="header_container">
@@ -17,14 +38,15 @@
 
       <nav class="header_navBar">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="" id="order">Order</a></li>
+          <li><a href="javascript:void(0)" onclick="betaCerrada()">Home</a></li>
+          <li><a href="javascript:void(0)" onclick="betaCerrada()">About</a></li>
+          <li><a href="javascript:void(0)" onclick="betaCerrada()">Menu</a></li>
+          <li><a href="javascript:void(0)" onclick="betaCerrada()">Contact</a></li>
+          <li><a href="javascript:void(0)" onclick="betaCerrada()" id="order">Order</a></li>
         </ul>
       </nav>
     </header>
+
 
     <!-- Main -->
     <main>
@@ -32,7 +54,7 @@
       <section id="welcome">
         <h2>Welcome to Compostela's Flavours</h2>
 
-        <button>Order Now</button>
+        <button onclick="betaCerrada()">Order Now</button>
       </section>
       <!-- Section 2 about -->
       <section id="about">
@@ -50,7 +72,7 @@
               blend of juicy patties, gourmet toppings, and freshly baked buns that
               will tantalize your taste buds and leave
             </p>
-            <button>Explore Menu</button>
+            <button onclick="betaCerrada()">Explore Menu</button>
           </article>
 
           <article class="cards">
@@ -66,13 +88,13 @@
               made with the finest ingredients and cooked to perfection, ensuring
               that every bite is a delicious experience.
             </p>
-            <button>Learn More</button>
+            <button onclick="betaCerrada()">Learn More</button>
           </article>
       </section>
       <!-- Section 3 menu -->
       <section id="perfection">
         <article>
-          <img src="./images/bigTwo.jpg" alt="bigTwo">
+          <img src="./images/bigTwo.jpg" alt="bigTwo" style="border-top-right-radius: 12px;">
           <div class="textContainer">
             <h3>The Art of Burger-Making</h3>
             <h4>A Taste of Perfection</h4>
@@ -81,7 +103,7 @@
               adventure. Hand-crafted burgers are the result of meticulous
               attention to detail, using only the finest and freshest ingredients
             </p>
-            <button>Order Now</button>
+            <button onclick="betaCerrada()">Order Now</button>
           </div>
         </article>
 
@@ -91,9 +113,9 @@
           <p>
             Discover our signature burguer creations, each one a masterpiece of flavour
           </p>
-          <button>Explore Menu</button>
+          <button onclick="betaCerrada()">Explore Menu</button>
         </div>
-        <img src="./images/batataConSalsaAliOli.jpg" alt="batata">
+        <img src="./images/batataConSalsaAliOli.jpg" alt="batata" style="border-bottom-left-radius: 12px;">
         <img src="./images/cherriCherri.jpg" alt="cherriCherri">
         </article>
 
@@ -130,7 +152,8 @@
           class="logo_redondeado"
           alt="logo"
           height="99px"
-          width="99px" />
+          width="99px"
+          style="border-radius: 12px;" />
         <div>
           <p>© 2024 Pilgrim's Burguers<br />All rights reserved.</p>
           <p>Get in touch</p>
@@ -139,28 +162,28 @@
       <div class="footer_url">
         <div>
           <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>YouTube</li>
+            <li><a href="javascript:void(0)" onclick="betaCerrada()">Facebook</a></li>
+            <li><a href="javascript:void(0)" onclick="betaCerrada()">Twitter</a></li>
+            <li><a href="javascript:void(0)" onclick="betaCerrada()">Instagram</a></li>
+            <li><a href="javascript:void(0)" onclick="betaCerrada()">YouTube</a></li>
           </ul>
         </div>
         <div>
           <!--<p>Get in touch with us for more information</p>-->
 
           <ul>
-            <li>Address</li>
-            <li>Hours</li>
-            <li>Our Location</li>
-            <li>Google Maps</li>
+            <li><a href="https://maps.google.com/maps?ll=42.87876,-8.547238&z=16&t=m&hl=es&gl=ES&mapclient=embed&cid=7185674915861012262"  target="_blank">Address</a></li>
+            <li><a href="https://maps.google.com/maps?ll=42.87876,-8.547238&z=16&t=m&hl=es&gl=ES&mapclient=embed&cid=7185674915861012262"  target="_blank">Hours</a></li>
+            <li><a href="https://maps.google.com/maps?ll=42.87876,-8.547238&z=16&t=m&hl=es&gl=ES&mapclient=embed&cid=7185674915861012262"  target="_blank">Our Location</a></li>
+            <li><a href="https://maps.google.com/maps?ll=42.87876,-8.547238&z=16&t=m&hl=es&gl=ES&mapclient=embed&cid=7185674915861012262"  target="_blank">Google Maps</a></li>
           </ul>
         </div>
         <div>
           <ul>
-            <li>Subscribe</li>
-            <li>Order Now</li>
-            <li>Follow Us</li>
-            <li>Explore Menu</li>
+            <li><a href="javascript:void(0)" onclick="betaCerrada()">Subscribe</a></li>
+            <li><a href="javascript:void(0)" onclick="betaCerrada()">Order Now</a></li>
+            <li><a href="javascript:void(0)" onclick="betaCerrada()">Follow Us</a></li>
+            <li><a href="javascript:void(0)" onclick="betaCerrada()">Explore Menu</a></li>
           </ul>
         </div>
       </div>
